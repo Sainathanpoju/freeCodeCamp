@@ -1,0 +1,34 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "23:30"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@fortawesome/fontawesome-svg-core"
+    versions:
+    - 1.2.32
+    - 1.2.34
+  - dependency-name: lodash-es
+    versions:
+    - 4.17.20
+  - dependency-name: rollbar
+    versions:
+    - 2.19.4
+  - dependency-name: "@fortawesome/free-regular-svg-icons"
+    versions:
+    - 5.15.1
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: prismjs
+    versions:
+    - 1.21.0
+  - dependency-name: elliptic
+    versions:
+    - 6.5.3
+  - dependency-name: handlebars
+    versions:
+    - 4.7.6
